@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarActivity">
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/etTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefono"
+        android:layout_below="@+id/etNombre"/>
+
+    <RadioGroup
+        android:id="@+id/rgTipos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTelefono">
+
+        <RadioButton
+            android:id="@+id/rbSkype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Skype/Teams"/>
+
+        <RadioButton
+            android:id="@+id/rbEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"/>
+
+        <RadioButton
+            android:id="@+id/rbTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefono"/>
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btOperacion"
+        android:text="@string/eliminar"
+        android:onClick="onClickEliminar"/>
+
+    <Button
+        android:id="@+id/btOperacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a_adir"
+        android:layout_alignParentBottom="true"
+        android:onClick="onClickOperacion"/>
+
+
+
+
+
+</RelativeLayout>

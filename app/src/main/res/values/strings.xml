@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">appContactos</string>
+    <string name="a_adir">Añadir</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Skype / Email / Telefono</string>
+
+    <string-array name="tipos">
+        <item>Skype</item>
+        <item>Email</item>
+        <item>Telefono</item>
+    </string-array>
+</resources>
